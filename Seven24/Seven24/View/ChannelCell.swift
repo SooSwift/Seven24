@@ -9,9 +9,12 @@
 import UIKit
 
 class ChannelCell: UITableViewCell {
+    
+    // MARK:- Propeties
     @IBOutlet weak var channelName: UILabel!
     @IBOutlet weak var channelDescription: UILabel!
 
+    // MARK:- View Lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

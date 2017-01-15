@@ -10,9 +10,11 @@ import UIKit
 
 class ProgramViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    // MARK: Properties
     @IBOutlet weak var programsTableView: UITableView!
     var channel:Channel = Channel(id: 0, name: "", displayOrder: 0, programs: [])
     
+    // MARK:- View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -35,22 +37,30 @@ class ProgramViewController: UIViewController, UITableViewDelegate, UITableViewD
         let program = self.channel.programs[indexPath.row]
         cell.programName.text = program.name
         if let startTime = program.startTime {
-            cell.programStartTime.text = String(format: "Starts %@", startTime.getDayAndTimeString())
+            cell.programStartTime.text = String(format: "Starts %@", startTime.getDateAndTimeString())
         } else {
             cell.programStartTime.text = "Start-time not available"
         }
         return cell
     }
 
-
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        switch segue.identifier! {
+        case "showProgramDetails":
+            guard let programDetailViewController:ProgramDetailViewController = segue.destination as? ProgramDetailViewController else {
+                return
+            }
+            guard let selectedProgram = self.programsTableView.indexPathForSelectedRow?.row else {
+                return
+            }
+            programDetailViewController.channelId = self.channel.id
+            programDetailViewController.program = self.channel.programs[selectedProgram]
+            
+        default:
+            return
+        }
     }
-    */
+    
 
 }

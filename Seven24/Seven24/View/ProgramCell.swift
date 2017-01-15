@@ -10,9 +10,11 @@ import UIKit
 
 class ProgramCell: UITableViewCell {
 
+    // MARK:- Propeties
     @IBOutlet weak var programName: UILabel!
     @IBOutlet weak var programStartTime: UILabel!
     
+    // MARK:- View Lifecycle
     override func awakeFromNib() {
         
         super.awakeFromNib()

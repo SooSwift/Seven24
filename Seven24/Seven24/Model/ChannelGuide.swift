@@ -8,7 +8,7 @@
 
 import Foundation
 
-// An ChannelGuide model to store the data list of channels and programs
+// A ChannelGuide model to store the data list of channels and programs
 struct ChannelGuide: Sortable {
     var channels:[Channel]
     
@@ -46,3 +46,26 @@ struct Program {
     let startTime:Date?
     let endtime:Date?
 }
+
+
+// A Program Rating
+enum Rating:Int{
+    case NotAvailable = 0
+    case Poor = 1
+    case Ok = 2
+    case Good = 3
+    case VeryGood = 4
+    case Superb = 5
+    
+    var description:String {
+        switch self {
+        case .NotAvailable: return "Not Available"
+        case .Poor: return "Poor"
+        case .Ok: return "Ok"
+        case .Good: return "Good"
+        case .VeryGood: return "Very Good"
+        case .Superb: return "Superb"
+        }
+    }
+}
+

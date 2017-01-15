@@ -42,20 +42,6 @@ class ChannelGuideManager: ChannelGuideSource {
                 return
             }
             
-            /*
-             //INFO: This json feed is encoded with ISOLatin1. Convert it to UTF-8 before serialization to be successful
-             guard let latinEncodedString = String(data: jsonData, encoding: String.Encoding.isoLatin1) else {
-             print("Expecting ISOLatin1 encoded data but found otherwize")
-             completion(false, nil)
-             return
-             }
-             guard let utf8Data = latinEncodedString.data(using: String.Encoding.utf8) else {
-             print("Expecting ISOLatin1 encoded data but found otherwize")
-             completion(false, nil)
-             return
-             }
-             */
-            
             // Serialize JSON
             do {
                 guard let jsonObject = try JSONSerialization.jsonObject(with: jsonData, options: []) as? [String:AnyObject]else {
@@ -122,8 +108,8 @@ class ChannelGuideManager: ChannelGuideSource {
                 }
             }
             
-            let testProgram = Program(id: 33, name: "Kaun Banega CrorePati", startTime: Date(), endtime: Date())
-            let testProgram1 = Program(id: 33, name: "This is really a long name what can I tell you about htis", startTime: Date(timeIntervalSince1970: 1483797600), endtime: Date())
+            let testProgram = Program(id: 33, name: "Kaun Banega CrorePati", startTime: nil, endtime: nil)
+            let testProgram1 = Program(id: 34, name: "This is really a long name what can I tell you about htis", startTime: Date(timeIntervalSince1970: 1483797600), endtime: Date())
             programs.append(testProgram)
             programs.append(testProgram1)
             

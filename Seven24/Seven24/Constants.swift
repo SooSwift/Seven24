@@ -10,4 +10,5 @@ import Foundation
 
 struct Config {
     static let channelGuideServiceURL = "https://s3-ap-southeast-2.amazonaws.com/swm-ftp-s3/ios/channels.json"
+    static let ratingsKey = "userRatings"
 }

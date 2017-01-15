@@ -10,10 +10,12 @@ import UIKit
 
 class ChannelViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    // MARK:- Properties
     @IBOutlet weak var channelTableView: UITableView!
     var channelGuide:ChannelGuide = ChannelGuide(channels:[])
     let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
     
+    // MARK:- View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -42,6 +44,7 @@ class ChannelViewController: UIViewController, UITableViewDataSource, UITableVie
     
     // MARK:- Private methods
     private func getChannelGuideFromFeed() {
+        self.showProgressIndicator()
         let channelGuideManager = ChannelGuideManager();
         channelGuideManager.getChannelGuide(fromURLString: Config.channelGuideServiceURL) { (success, channelGuide) in
             
@@ -49,7 +52,6 @@ class ChannelViewController: UIViewController, UITableViewDataSource, UITableVie
             if(!success || channelGuide == nil) {
                 DispatchQueue.main.async {
                     self.hideProgressIndicator()
-                    
                     let alert = UIAlertController(title: "Error", message: "Unable to fetch channel guide", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
                     self.present(alert, animated: true)
