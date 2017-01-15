@@ -41,14 +41,14 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Channel Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDR-mf-lkj">
-                                                    <rect key="frame" x="84.5" y="15" width="192.5" height="24"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <rect key="frame" x="84.5" y="23" width="192.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdX-mt-ore">
-                                                    <rect key="frame" x="84.5" y="44" width="81.5" height="20"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <rect key="frame" x="84.5" y="47.5" width="73" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -57,7 +57,7 @@
                                                 <constraint firstItem="PDR-mf-lkj" firstAttribute="leading" secondItem="uaa-eq-wbz" secondAttribute="trailing" constant="20" id="0KT-zU-InJ"/>
                                                 <constraint firstAttribute="trailing" secondItem="PDR-mf-lkj" secondAttribute="trailing" constant="10" id="EAa-rI-Rss"/>
                                                 <constraint firstItem="uaa-eq-wbz" firstAttribute="leading" secondItem="wOa-D4-FAG" secondAttribute="leading" constant="5" id="IAg-f0-DgZ"/>
-                                                <constraint firstItem="PDR-mf-lkj" firstAttribute="top" secondItem="wOa-D4-FAG" secondAttribute="top" constant="15" id="OyU-Tu-bFU"/>
+                                                <constraint firstItem="PDR-mf-lkj" firstAttribute="top" secondItem="wOa-D4-FAG" secondAttribute="top" constant="23" id="OyU-Tu-bFU"/>
                                                 <constraint firstItem="uaa-eq-wbz" firstAttribute="top" secondItem="wOa-D4-FAG" secondAttribute="top" constant="5" id="b0I-22-sZl"/>
                                                 <constraint firstItem="vdX-mt-ore" firstAttribute="leading" secondItem="PDR-mf-lkj" secondAttribute="leading" id="d9J-08-ZBb"/>
                                                 <constraint firstAttribute="bottom" secondItem="uaa-eq-wbz" secondAttribute="bottom" constant="5" id="dkz-yT-al3"/>
@@ -95,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="826.875" y="-668.75"/>
+            <point key="canvasLocation" x="338" y="-615"/>
         </scene>
         <!--Programs-->
         <scene sceneID="Znf-3i-sN6">
@@ -127,14 +127,14 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Program Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLD-Ce-uVP">
-                                                    <rect key="frame" x="84" y="15" width="193" height="24"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <rect key="frame" x="84" y="23" width="193" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbX-rc-C0U">
-                                                    <rect key="frame" x="84" y="44" width="76" height="20"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <rect key="frame" x="84" y="47.5" width="68" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -143,7 +143,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="zLD-Ce-uVP" secondAttribute="trailing" constant="10" id="B5J-eX-rPZ"/>
                                                 <constraint firstItem="eEq-8c-MjQ" firstAttribute="top" secondItem="VSn-1t-pwp" secondAttribute="top" constant="5" id="JD6-CI-xOs"/>
                                                 <constraint firstAttribute="bottom" secondItem="eEq-8c-MjQ" secondAttribute="bottom" constant="5" id="SnA-7s-bB7"/>
-                                                <constraint firstItem="zLD-Ce-uVP" firstAttribute="top" secondItem="VSn-1t-pwp" secondAttribute="top" constant="15" id="Wld-xa-AYK"/>
+                                                <constraint firstItem="zLD-Ce-uVP" firstAttribute="top" secondItem="VSn-1t-pwp" secondAttribute="top" constant="23" id="Wld-xa-AYK"/>
                                                 <constraint firstItem="zLD-Ce-uVP" firstAttribute="leading" secondItem="eEq-8c-MjQ" secondAttribute="trailing" constant="20" id="a3R-EQ-om9"/>
                                                 <constraint firstItem="eEq-8c-MjQ" firstAttribute="leading" secondItem="VSn-1t-pwp" secondAttribute="leading" constant="5" id="gha-ue-9vh"/>
                                                 <constraint firstItem="SbX-rc-C0U" firstAttribute="top" secondItem="zLD-Ce-uVP" secondAttribute="bottom" constant="5" id="obl-UA-YoT"/>
@@ -179,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zei-XN-GEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1565.625" y="-675"/>
+            <point key="canvasLocation" x="1104" y="-615"/>
         </scene>
         <!--Program-->
         <scene sceneID="X3Q-sN-20N">
@@ -332,7 +332,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NUw-4r-E6g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2281.875" y="-675"/>
+            <point key="canvasLocation" x="1858" y="-615"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IEj-Qq-YdI">
@@ -345,12 +345,54 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ST6-IL-PrW"/>
+                        <segue destination="y1y-Kr-Q0X" kind="relationship" relationship="rootViewController" id="REy-nK-EZP"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xht-bV-71f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="78.75" y="-682.5"/>
+            <point key="canvasLocation" x="-426" y="-1431"/>
+        </scene>
+        <!--Launch View Controller-->
+        <scene sceneID="C0a-tf-Zge">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="y1y-Kr-Q0X" customClass="LaunchViewController" customModule="Seven24" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9gm-rW-f0a"/>
+                        <viewControllerLayoutGuide type="bottom" id="7tp-dg-LN4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1yq-46-Weo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seven24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1x-t1-dsT">
+                                <rect key="frame" x="111" y="177" width="98.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your 7/24 guide to seven network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9v-mr-nYv">
+                                <rect key="frame" x="32" y="217" width="256" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c1x-t1-dsT" firstAttribute="centerX" secondItem="1yq-46-Weo" secondAttribute="centerX" id="Ywz-hE-RFq"/>
+                            <constraint firstItem="c1x-t1-dsT" firstAttribute="centerY" secondItem="1yq-46-Weo" secondAttribute="centerY" multiplier="0.8" id="dar-G0-2Of"/>
+                            <constraint firstItem="s9v-mr-nYv" firstAttribute="centerX" secondItem="1yq-46-Weo" secondAttribute="centerX" id="r5Q-E4-oiM"/>
+                            <constraint firstItem="s9v-mr-nYv" firstAttribute="top" secondItem="c1x-t1-dsT" secondAttribute="bottom" constant="10" id="x9E-hu-9cA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uSw-5c-h2y"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="showChannels" id="cgY-Vn-oCG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ey4-Vg-C6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="337.5" y="-1431.25"/>
         </scene>
     </scenes>
     <resources>

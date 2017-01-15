@@ -24,6 +24,7 @@
 		03BF230D1E2AF3D000870600 /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF230C1E2AF3D000870600 /* Date+Formatter.swift */; };
 		03ECCFBA1E2B05C100E3506B /* ProgramDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ECCFB91E2B05C100E3506B /* ProgramDetailViewController.swift */; };
 		03ECCFBC1E2B30F000E3506B /* RatingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ECCFBB1E2B30F000E3506B /* RatingManager.swift */; };
+		03ECCFC01E2B497600E3506B /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ECCFBF1E2B497600E3506B /* LaunchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		03BF230C1E2AF3D000870600 /* Date+Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Formatter.swift"; sourceTree = "<group>"; };
 		03ECCFB91E2B05C100E3506B /* ProgramDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramDetailViewController.swift; sourceTree = "<group>"; };
 		03ECCFBB1E2B30F000E3506B /* RatingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingManager.swift; sourceTree = "<group>"; };
+		03ECCFBF1E2B497600E3506B /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				03BF22FA1E2A0CDF00870600 /* ChannelViewController.swift */,
 				03BF23011E2ADB5500870600 /* ProgramViewController.swift */,
 				03ECCFB91E2B05C100E3506B /* ProgramDetailViewController.swift */,
+				03ECCFBF1E2B497600E3506B /* LaunchViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				03BF22F71E29BEBE00870600 /* ChannelGuide.swift in Sources */,
 				03BF22CC1E29B85400870600 /* AppDelegate.swift in Sources */,
 				03BF22FB1E2A0CDF00870600 /* ChannelViewController.swift in Sources */,
+				03ECCFC01E2B497600E3506B /* LaunchViewController.swift in Sources */,
 				03BF230A1E2AF0D000870600 /* ProgramCell.swift in Sources */,
 				03ECCFBA1E2B05C100E3506B /* ProgramDetailViewController.swift in Sources */,
 				03ECCFBC1E2B30F000E3506B /* RatingManager.swift in Sources */,
