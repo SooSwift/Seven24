@@ -59,6 +59,10 @@ class ProgramDetailViewController: UIViewController {
     @IBAction func onSaveRatings(_ sender: Any) {
         let rating = Rating(rawValue: self.ratingBar.selectedSegmentIndex + 1) ?? Rating.NotAvailable
         RatingManager.sharedInstance.setRating(rating: rating, forChannel: channelId, program: self.program.id)
+        
+        let alert = UIAlertController(title: "Thank you for rating", message: "", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        self.present(alert, animated: true)
     }
     
 }
