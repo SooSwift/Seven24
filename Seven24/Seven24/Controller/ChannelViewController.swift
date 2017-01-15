@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChannelViewController: UIViewController, UITableViewDataSource {
+class ChannelViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var channelTableView: UITableView!
     var channelGuide:ChannelGuide = ChannelGuide(channels:[])
@@ -61,6 +61,7 @@ class ChannelViewController: UIViewController, UITableViewDataSource {
             
             // Success
             self.channelGuide = channelGuide
+            self.channelGuide.sort();
             
             DispatchQueue.main.async {
                 self.hideProgressIndicator()
@@ -80,5 +81,22 @@ class ChannelViewController: UIViewController, UITableViewDataSource {
         self.activityIndicator.stopAnimating()
         self.activityIndicator.removeFromSuperview()
     }
-
+    
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier! {
+        case "showPrograms":
+            guard let programViewController:ProgramViewController = segue.destination as? ProgramViewController else {
+                return
+            }
+            guard let selectedChannel = self.channelTableView.indexPathForSelectedRow?.row else {
+                return
+            }
+            programViewController.channel = self.channelGuide.channels[selectedChannel]
+            
+        default:
+            return;
+        }
+    }
 }

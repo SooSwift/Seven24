@@ -18,6 +18,10 @@
 		03BF22FB1E2A0CDF00870600 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF22FA1E2A0CDF00870600 /* ChannelViewController.swift */; };
 		03BF22FD1E2A0E9100870600 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF22FC1E2A0E9100870600 /* Constants.swift */; };
 		03BF23001E2A113B00870600 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF22FF1E2A113B00870600 /* ChannelCell.swift */; };
+		03BF23021E2ADB5500870600 /* ProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF23011E2ADB5500870600 /* ProgramViewController.swift */; };
+		03BF23041E2ADEA500870600 /* Sortable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF23031E2ADEA500870600 /* Sortable.swift */; };
+		03BF230A1E2AF0D000870600 /* ProgramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF23091E2AF0D000870600 /* ProgramCell.swift */; };
+		03BF230D1E2AF3D000870600 /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF230C1E2AF3D000870600 /* Date+Formatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		03BF22FA1E2A0CDF00870600 /* ChannelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
 		03BF22FC1E2A0E9100870600 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		03BF22FF1E2A113B00870600 /* ChannelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
+		03BF23011E2ADB5500870600 /* ProgramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramViewController.swift; sourceTree = "<group>"; };
+		03BF23031E2ADEA500870600 /* Sortable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sortable.swift; sourceTree = "<group>"; };
+		03BF23091E2AF0D000870600 /* ProgramCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramCell.swift; sourceTree = "<group>"; };
+		03BF230C1E2AF3D000870600 /* Date+Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Formatter.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,7 @@
 		03BF22CA1E29B85400870600 /* Seven24 */ = {
 			isa = PBXGroup;
 			children = (
+				03BF230B1E2AF32400870600 /* Helper */,
 				03BF22FE1E2A110500870600 /* View */,
 				03BF22EB1E29B8D900870600 /* Controller */,
 				03BF22ED1E29B8D900870600 /* Model */,
@@ -114,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				03BF22FA1E2A0CDF00870600 /* ChannelViewController.swift */,
+				03BF23011E2ADB5500870600 /* ProgramViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -122,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				03BF22F61E29BEBE00870600 /* ChannelGuide.swift */,
+				03BF23031E2ADEA500870600 /* Sortable.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -139,8 +150,17 @@
 			isa = PBXGroup;
 			children = (
 				03BF22FF1E2A113B00870600 /* ChannelCell.swift */,
+				03BF23091E2AF0D000870600 /* ProgramCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		03BF230B1E2AF32400870600 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				03BF230C1E2AF3D000870600 /* Date+Formatter.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,10 +269,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				03BF22F91E29D6D900870600 /* ChannelGuideManager.swift in Sources */,
+				03BF230D1E2AF3D000870600 /* Date+Formatter.swift in Sources */,
 				03BF22F71E29BEBE00870600 /* ChannelGuide.swift in Sources */,
 				03BF22CC1E29B85400870600 /* AppDelegate.swift in Sources */,
 				03BF22FB1E2A0CDF00870600 /* ChannelViewController.swift in Sources */,
+				03BF230A1E2AF0D000870600 /* ProgramCell.swift in Sources */,
 				03BF23001E2A113B00870600 /* ChannelCell.swift in Sources */,
+				03BF23041E2ADEA500870600 /* Sortable.swift in Sources */,
+				03BF23021E2ADB5500870600 /* ProgramViewController.swift in Sources */,
 				03BF22F51E29BE7F00870600 /* ChannelGuideSource.swift in Sources */,
 				03BF22FD1E2A0E9100870600 /* Constants.swift in Sources */,
 			);
