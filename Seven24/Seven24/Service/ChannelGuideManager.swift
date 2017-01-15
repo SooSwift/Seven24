@@ -108,12 +108,6 @@ class ChannelGuideManager: ChannelGuideSource {
                 }
             }
             
-            let testProgram = Program(id: 33, name: "Kaun Banega CrorePati", startTime: nil, endtime: nil)
-            let testProgram1 = Program(id: 34, name: "This is really a long name what can I tell you about htis", startTime: Date(timeIntervalSince1970: 1483797600), endtime: Date())
-            programs.append(testProgram)
-            programs.append(testProgram1)
-            
-            
             let channel = Channel(id: id, name: name, displayOrder: displayOrder, programs: programs)
             channels.append(channel)
         }

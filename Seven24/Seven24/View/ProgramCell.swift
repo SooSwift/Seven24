@@ -16,7 +16,6 @@ class ProgramCell: UITableViewCell {
     
     // MARK:- View Lifecycle
     override func awakeFromNib() {
-        
         super.awakeFromNib()
         // Initialization code
     }

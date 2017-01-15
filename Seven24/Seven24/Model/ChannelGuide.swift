@@ -57,6 +57,7 @@ enum Rating:Int{
     case VeryGood = 4
     case Superb = 5
     
+    //Implement description which will return the user rating as String
     var description:String {
         switch self {
         case .NotAvailable: return "Not Available"
