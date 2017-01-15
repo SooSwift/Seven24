@@ -18,6 +18,8 @@ class ProgramViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        //Add footerView to hide empty cells
+        self.programsTableView.tableFooterView = UIView()
         self.title = channel.name
     }
 

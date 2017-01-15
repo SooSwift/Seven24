@@ -20,6 +20,8 @@ class ChannelViewController: UIViewController, UITableViewDataSource, UITableVie
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.navigationItem.hidesBackButton = true
+        //Add footerView to hide empty cells
+        self.channelTableView.tableFooterView = UIView()
         self.getChannelGuideFromFeed();
     }
 
